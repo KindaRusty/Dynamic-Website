@@ -54,6 +54,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5rem;
+    position: relative;
+    z-index: 10;
 }
 
 nav{
@@ -201,6 +203,15 @@ main{
     top: 0;
     right: -20%;
 }
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
 
 /* Tablet reponsive */
 @media (max-width: 1300px){
