@@ -193,3 +193,70 @@ main{
 .btn-signing-main:hover{
     background-color: gray;
 }
+
+.robot-3d{
+    position: absolute;
+    top: 0;
+    right: -20%;
+}
+
+/* Tablet reponsive */
+@media (max-width: 1300px){
+    .jobs-header{
+        padding: 1rem 0.5rem;
+    }
+    .jobs-content{
+        margin-top: 85%;
+    }
+    .robot-3d{
+        scale: 0.8;
+        top: -20%;
+        right: 2%;
+    }
+}
+
+/* Mobbile reponsive */
+
+@media (max-width: 768px){
+    .jobs-header{
+        padding: 1rem 0.1rem;
+    }
+    nav{
+        display: none;
+    }
+    .jobs-header h1{
+        font-size: 2rem;
+    }
+    .btn-signing{
+        padding: 0.6rem 1.5rem;
+    }
+    .jobs-content{
+        margin-top: 25rem;
+    }
+    .robot-3d{
+        scale: 0.5;
+        top: -25%;
+        right: 0;
+    }
+    .jobs-content{
+        max-width: 30rem;
+        margin-left: 10%;
+    }
+    .tag-box{
+        width: 12rem;
+    }
+    .jobs-content h1{
+        font-size: 2.5rem;
+    }
+    .description{
+        font-size: 1rem;
+    }
+    .btn-get-started{
+        font-size: 0.8rem;
+        padding: 0.5rem 1.2rem;
+    }
+    .btn-signing-main{
+        font-size: 0.8rem;
+        padding: 0.8rem 2rem;
+    }
+}

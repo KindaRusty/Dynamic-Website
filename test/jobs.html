@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Careers at TechNova</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body class="jobs-page">
@@ -18,12 +17,12 @@
     <div class="body-container">
 
         <header class="jobs-header">
-            <h1 class="logo">TECHNOVA</h1>
+            <h1 data-aos="fade-down" data-aos-duration="1500" class="logo">TECHNOVA</h1>
             <nav>
-                <a href="#">COMPANY</a>
-                <a href="#">FEATURES</a>
-                <a href="#">RESOURCES</a>
-                <a href="#">CONTACT</a>
+                <a data-aos="fade-down" data-aos-duration="2000" href="#">COMPANY</a>
+                <a data-aos="fade-down" data-aos-duration="2500" href="#">FEATURES</a>
+                <a data-aos="fade-down" data-aos-duration="3000" href="#">RESOURCES</a>
+                <a data-aos="fade-down" data-aos-duration="3000" href="#">CONTACT</a>
             </nav>
         <button class="btn-signing">SIGNING</button>  
         </header>
@@ -50,12 +49,18 @@
 
 </main>    
 
-    <spline-viewer class="robot3d" url="https://prod.spline.design/1dcxapFMBHoC1Fs/scene.splinecode"></spline-viewer>
+    <spline-viewer class="robot-3d" url="https://prod.spline.design/1dcxapFMBHoC1Fs/scene.splinecode"></spline-viewer>
 
     </div>
 
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.72/build/spline-viewer.js"></script>
-    
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
 </body>
 
 </html>
