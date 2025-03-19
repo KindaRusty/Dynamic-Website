@@ -48,17 +48,12 @@
 }
 
 /* Header */
+
 .jobs-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5rem;
-}
-
-.jobs-header h1{
-    margin: 0;
-    font-size: 3rem;
-    font-weight: 300;
 }
 
 nav{
@@ -73,11 +68,11 @@ nav a{
     letter-spacing: 0.1rem;
     transition: color 0.2s ease;
     text-decoration: none;
-    color: inherit;
+    color: white;
 }
 
-nav a:hover{
-    color: #a7a7a7;
+nav a:hover, nav a.active {
+    color: #d61c62;
 }
 
 .btn-signing{
@@ -150,8 +145,8 @@ main{
 }
 
 .jobs-content h1{
-   font-size: 4rem;
-   font-weight: 600;
+   font-size: 3rem;
+   font-weight: 300;
    letter-spacing: 0.1rem;
    margin: 2rem 0;
    line-height: 1.2;
@@ -231,9 +226,6 @@ main{
     nav{
         display: none;
     }
-    .jobs-header h1{
-        font-size: 2rem;
-    }
     .btn-signing{
         padding: 0.6rem 1.5rem;
     }
@@ -280,7 +272,7 @@ main{
     position: relative;
     display: grid;
     grid-template-columns: 400px repeat(3, 1fr);
-    gap: 2rem;
+    gap: 5rem;
     max-width: 1200px;
     margin: auto;
     padding: 5rem 2rem;
