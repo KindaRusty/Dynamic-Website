@@ -196,7 +196,7 @@ main{
     background-color: gray;
 }
 
-.robot-3d{
+.animation {
     position: absolute;
     top: 0;
     right: -20%;
@@ -210,7 +210,7 @@ main{
     .jobs-content{
         margin-top: 85%;
     }
-    .robot-3d{
+    .animation{
         scale: 0.8;
         top: -20%;
         right: 2%;
@@ -232,7 +232,7 @@ main{
     .jobs-content{
         margin-top: 25rem;
     }
-    .robot-3d{
+    .animation{
         scale: 0.5;
         top: -25%;
         right: 0;
@@ -333,14 +333,5 @@ main{
 
 .footer-container .column a:hover{
     color: #1d4ed8;
-}
-
-.copyright{
-    max-width: 1200px;
-    margin: auto;
-    padding: 1rem;
-    color: #fff;
-    font-size: 0.8rem;
-    text-align: center;
 }
 
