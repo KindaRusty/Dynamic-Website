@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure CSS Theme Toggle</title>
+    <style>
+        :root {
+            --background-light: #ffffff;
+            --text-light: #000000;
+            --background-dark: #121212;
+            --text-dark: #ffffff;
+        }
+
+        /* Default Light Theme */
+        .theme-container {
+            background: var(--background-light);
+            color: var(--text-light);
+            font-family: Arial, sans-serif;
+            transition: background 0.3s, color 0.3s;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Hide the checkbox */
+        #theme-toggle {
+            display: none;
+        }
+
+        /* Label styling (acts as a button) */
+        .toggle-label {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 20px;
+            background: #ddd;
+            color: #000;
+            cursor: pointer;
+            border-radius: 5px;
+            user-select: none;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        /* Apply dark theme when checkbox is checked */
+        #theme-toggle:checked ~ .theme-container {
+            background: var(--background-dark);
+            color: var(--text-dark);
+        }
+
+        #theme-toggle:checked + .toggle-label {
+            background: #444;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Checkbox for toggling theme -->
+    <input type="checkbox" id="theme-toggle">
+    <label for="theme-toggle" class="toggle-label">Toggle Theme</label>
+
+    <!-- Content Wrapper -->
+    <div class="theme-container">
+        <h1>CSS Only Theme Toggle</h1>
+        <p>Click the button to switch between light and dark themes.</p>
+    </div>
+</body>
+</html>
