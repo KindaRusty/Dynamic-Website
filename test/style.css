@@ -188,18 +188,43 @@ main{
 }
 
 .btn-signing-main{
-    text-decoration: none;
-    background-color: lightgray;
-    color: black;
-    padding: 0.6rem 2.5rem;
+    position: relative;
+    padding: 1.5rem 2rem;
+    font-size: 1.3rem;
+    width: 15rem;
     border-radius: 50px;
-    font-size: 1.2rem;
-    letter-spacing: 0.1em;
-    transition: background-color 0.2s ease;
+    background: transparent;
+    border: 2px solid var(--clr);
+    color: var(--clr);
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.75s;
+    z-index: 2;
 }
 
-.btn-signing-main:hover{
-    background-color: gray;
+.btn-signing-main::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clr);
+    clip-path: circle(0% at 50% 50%);
+    transition: 0.75s;
+    z-index: -1;
+}
+
+.btn-signing-main:hover::after{
+    clip-path: circle(100% at 50% 50%);
+}
+
+.btn-signing-main:hover {
+    color: black;
+    box-shadow: 0 0 10px var(--clr),
+    0 0 50px var(--clr);
 }
 
 .animation {
@@ -273,6 +298,109 @@ iframe {
         font-size: 0.8rem;
         padding: 0.8rem 2rem;
     }
+}
+
+/* Info Cards */
+
+.jobs-detail{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.job-heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0; /* Adds spacing between elements */
+}
+
+.job-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+.jobs-card{
+    width: 20rem;
+    height: 24rem;
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.top{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 12rem;
+    background: #5f7adb;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 1s;
+    z-index: 1;
+}
+
+.top i{
+    font-size: 3rem;
+    color: white;
+}
+
+.jobs-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+.jobs-card:hover .top{
+    transform: translateY(-100%);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.bottom{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 12rem;
+    padding: 1rem;
+    text-align: justify;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    transition: 1s;
+}
+
+.bottom h2{
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-align: start;
+    color: black;
+}
+
+.bottom p{
+    color: black;
+}
+
+.jobs-card:hover .bottom{
+    transform: translateY(0);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 /* Footer */
