@@ -16,183 +16,262 @@ body {
     flex: 1;
 }
 
-/* Jobs page */
+/* Jobs Pages */
 
-.banner {
-    width: 100%;
-    max-height: 350px;
-    object-fit: cover;
-    display: block;
-    margin: -80px auto 0;
+.jobs-page{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(to bottom, #fff 75%, #212529 25%);
+    min-height: 100vh;
+    line-height: 1.5;
+    color: #000;
 }
 
-.jobs-page .img-fluid {
-   max-height: 400px;
-   width: 75%;
-}
+/* Main content */
 
-#find {
+main{
     margin-top: 100px;
-    padding: 30px;
-    text-align: center;
-}
-
-.job-aside {
-    width: 25%; 
-    float: right; 
-    border: 2px solid transparent; 
-    padding: 15px; 
-    margin: 0 0 15px 15px; 
-    background-color: transparent; 
-    text-align: center;
-}
-
-.job-image {
-    width: 100%; /* Makes the image fit inside */
-    max-height: 150px;
-    object-fit: cover; /* Ensures proper scaling */
-    border-radius: 8px; /* Slightly rounded corners */
-}
-
-.dropdown-container {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-btn {
-    background-color: white;
-    padding: 10px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    width: 90px;
-    text-align: left;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background: white;
-    border: 1px solid #ccc;
-    width: 250px;
-    padding: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-    max-height: 300px;
-    overflow-y: auto;
-}
-
-.dropdown-container:focus-within .dropdown-content {
-    display: block;
-}
-
-.search-box {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-}
-
-label {
-    display: block;
-    padding: 5px 0;
-}
-
-#text {
-    width: 220px;  
-    height: 18px;  
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-}
-
-/* Hidden content */
-
-.hidden-content {
-    display: none;
-    background: #f9f9f9;
-    padding: 20px;
-    border: 3px solid #ccc;
-    margin-top: 10px;
-    text-align: left;
-    position: relative;
-}
-
-.close-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    width: 24px;
-    height: 24px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.05);
-    border: none;
+    min-height: auto;
+}
+
+.body-container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.jobs-content{
+    max-width: 40rem;
+    margin-left: 7.5%;
+    z-index: 999;
+}
+
+.jobs-content h1{
+   font-size: 3rem;
+   font-weight: 700;
+   letter-spacing: 0.1rem;
+   margin: 2rem 0;
+   line-height: 1.2;
+   text-shadow: 0 0 10px rgba(128, 128, 128, 0.418); 
+}
+
+.description{
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    max-width: 35rem;
+    color: black;
+}
+
+.buttons{
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+:root {
+    --clr: blue; /* Define the default color */
+}
+
+.btn-signing-main{
+    position: relative;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    width: 14.5rem;
+    border-radius: 50px;
+    background: transparent;
+    border: 2px solid var(--clr);
+    color: var(--clr);
+    font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.2s ease, border 0.2s ease;
-}
-
-.close-btn:hover {
-    background-color: rgba(146, 145, 145, 0.3);  
-    color: #fff;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-}
-
-/* Search, display content */
-
-.hidden-content:target {
-    display: block;
-}
-
-/* Search */
-
-.search-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color:#265427;
-    color: white;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.75s;
+    z-index: 2;
+    top: -20px;
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
+
 }
 
-.search-btn:hover {
-    background: #45a049;
+.btn-signing-main::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clr);
+    clip-path: circle(0% at 50% 50%);
+    transition: 0.75s;
+    z-index: -1;
 }
 
-/* View & Back */
+.btn-signing-main:hover::after{
+    clip-path: circle(100% at 50% 50%);
+}
 
-.view-btn, .back-btn {
+.btn-signing-main:hover{
+    color: black;
+    box-shadow: 0 0 10px var(--clr),
+    0 0 50px var(--clr);
+}
+
+  .slideshow-container{
+    position: absolute;
+    top: 45%;
+    right: 5%;  
+    transform: translateY(-50%);
+    width: 600px;  
+    height: 375px;
+    overflow: hidden;  
+    border: 2px solid transparent;
+    border-radius: 15px;
+}
+
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: slideShow 18s infinite;
+}
+
+.slide:nth-child(1){
+    animation-delay: 2s;
+}
+.slide:nth-child(2){
+    animation-delay: 7s;
+}
+.slide:nth-child(3){
+    animation-delay: 12s;
+}
+
+@keyframes slideShow{
+    0% { opacity: 0; }
+    5% { opacity: 1; }  
+    50% { opacity: 1; } 
+    55% { opacity: 0; } 
+    100% { opacity: 0; }
+}
+
+/* Info Cards */
+
+.jobs-detail{
+    width: 100%;
+    height: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; 
+    margin-top: 10px; 
+}
+
+.job-heading-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1px; 
+}
+
+.job-heading {
+    margin-top: 50px;
+    font-size: 36px; 
+    font-weight: 700; 
+    color: black; 
+    text-align: center;
+}
+
+.jobs-card{
+    width: 20rem;
+    height: 24rem;
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+    top: -10px;
+}
+
+.top{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 12rem;
+    background: transparent;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 1s;
+    z-index: 1;
+}
+
+.jobs-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+.jobs-card:hover .top{
+    transform: translateY(-100%);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.bottom{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 12rem;
+    padding: 1rem;
+    text-align: justify;
+    background: #e3f2fd;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    transition: 1s;
+}
+
+.bottom h2{
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-align: start;
+    color: black;
+}
+
+.bottom p{
+    color: black;
+}
+
+.jobs-card:hover .bottom{
+    transform: translateY(0);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.view-btn{
     display: inline-block;
     padding: 8px 15px;
     background: #007bff;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 6px;
+    align-self: center; 
 }
 
-.view-btn:hover, .back-btn:hover {
+.view-btn:hover{
     background: #0056b3;
-}
- 
-.follow-us {
-    text-align: center;
-    background: #f1f1f1;
-    padding: 15px;
-    width: 100%;
-}
-
-.follow-us p a img {
-    width: 30px;  
-    height: auto;
-    margin: 0 10px;
 }
 
 /* General Reset */
@@ -221,6 +300,7 @@ h1 {
 #header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 10px 50px;
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -396,6 +476,22 @@ body {
 
 #navbar li a:hover, #navbar li a.active {
     color: #d61c62;
+}
+
+.btn-signing{
+    background-color: transparent;
+    color: black;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    border: 2px solid rgb(73, 195, 89);
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.btn-signing:hover{
+    background-color: rgb(73, 195, 89);
 }
 
 /* About Section */
