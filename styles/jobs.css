@@ -20,7 +20,7 @@
 
 /* Navigation Styling */
 
-#header {
+#header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,12 +34,12 @@
     z-index: 1000;
 }
 
-.logo {
+.logo{
     height: 50px;
     margin-right: 20px;
 }
 
-#navbar {
+#navbar{
     list-style: none;
     display: flex;
     gap: 20px;
@@ -47,11 +47,11 @@
     padding: 0;
 }
 
-#navbar li {
+#navbar li{
     display: inline;
 }
 
-#navbar li a {
+#navbar li a{
     font-size: 18px;
     color: #2d3e50;
     padding: 10px 15px;
@@ -59,11 +59,11 @@
     text-decoration: none;
 }
 
-#navbar li a.active {
+#navbar li a.active{
     color: #d37314; 
 }
 
-#navbar li a:hover {
+#navbar li a:hover{
     color: #d37314;
     text-decoration: none;
 }
@@ -130,7 +130,7 @@ main{
     margin-top: 3rem;
 }
 
-:root {
+:root{
     --clr: blue; /* Define the default color */
 }
 
@@ -236,7 +236,7 @@ main{
     margin-bottom: 1px; 
 }
 
-.job-heading {
+.job-heading{
     margin-top: 50px;
     font-size: 36px; 
     font-weight: 700; 
@@ -330,63 +330,6 @@ main{
 
 .view-btn:hover{
     background: #0056b3;
-}
-
-/* Header */
-
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.2rem 5rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white; 
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-nav{
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    margin-left: -5%;
-}
-
-nav a{
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-    text-decoration: none;
-    padding: 10px 15px;
-    color: #2D3E50; 
-    transition: color 0.2s ease;
-}
-
-nav a:hover, nav a.active{
-    color: #d61c62;
-}
-
-.btn-signing{
-    background-color: transparent;
-    color: black;
-    padding: 0.8rem 2rem;
-    border-radius: 50px;
-    border: 2px solid rgb(73, 195, 89);
-    font-size: 1rem;
-    font-weight: bold;
-    transition: background-color 0.2s ease;
-    cursor: pointer;
-}
-
-.btn-signing:hover{
-    background-color: rgb(73, 195, 89);
-}
-
-.logo{
-    height: 50px;
-    margin-right: 20px;
 }
 
 /* Footer */
