@@ -60,7 +60,7 @@
             <p>
                 We are looking for a Senior Web Developer to build and maintain functional web pages and applications...
             </p>
-            <a href="detail.html" class="view-btn">View</a>
+            <a href="detail.php" class="view-btn">View</a>
         </div>
     </div>
 
@@ -71,7 +71,7 @@
             <p>
                 You will join our Software Development Test team and gain valuable, hands-on experience in all validation aspects of...
             </p>
-            <a href="detail.html" class="view-btn">View</a>
+            <a href="detail.php" class="view-btn">View</a>
         </div>
     </div>
 
@@ -82,7 +82,7 @@
             <p>
                 We are looking for a driven and passionate Cybersecurity Analyst to join our growing software engineering team...
             </p>
-            <a href="detail.html" class="view-btn">View</a>
+            <a href="detail.php" class="view-btn">View</a>
         </div>
     </div>
 
@@ -93,7 +93,7 @@
             <p>
                 As an IT Support Specialist, you will play a crucial role in ensuring seamless IT operations by providing...
             </p>
-            <a href="detail.html" class="view-btn">View</a>
+            <a href="detail.php" class="view-btn">View</a>
         </div>
     </div>
 
