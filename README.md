@@ -11,10 +11,11 @@ Bùi Tiến Hưng
 Our goal is to create a well-structured, responsive, dynamic and visually appealing static website that meets the project requirements. The website will include multiple pages, interactive elements, and a user-friendly design.
 
 🔧 Technologies Used
-HTML
-CSS
-PHP
-MySQL
+
+🟠 [HTML]
+🔵 [CSS]
+🟣 [PHP]
+🟢 [MySQL]
 
 📂 Project Structure
 /project2           You must have this folder – case sensitive!
