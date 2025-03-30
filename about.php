@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 
 <body>
@@ -133,5 +134,9 @@
         <p>Contact us at: <a href="mailto:thanhkien2900@gmail.com">TechNova@gmail.com</a></p>
     </section>
     <?php include 'footer.inc'; ?>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>  
+
 </body>
 </html>
