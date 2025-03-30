@@ -1,4 +1,4 @@
-    <footer class="footer-container">
+    <footer class="footer-container" data-aos="fade-down" data-aos-duration="3000">
         <span class="blur"></span>
         <span class="blur"></span>
 

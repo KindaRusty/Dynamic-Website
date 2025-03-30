@@ -1,4 +1,4 @@
-<section id="header">
+<section id="header" data-aos="fade-down" data-aos-duration="1500">
         <a href="index.html"><img src="images/logo.png" class="logo" alt="logo"></a>
         <div>
             <ul id="navbar">
@@ -10,6 +10,6 @@
             </ul>
         </div>
         <a href="register.php">
-        <button data-aos="fade-down" data-aos-duration="3000" class="btn-signing">SIGN IN</button>
+        <button data-aos="fade-down" data-aos-duration="2000" class="btn-signing">SIGN IN</button>
         </a>
 </section>
