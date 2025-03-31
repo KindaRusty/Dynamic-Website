@@ -35,7 +35,12 @@ if (isset($_POST["login"])) {
 
     if ($manager && password_verify($password, $manager["password"])) {
         $_SESSION["manager"] = $username;
-        header("Location: manage.php");
+
+        if ($username === "admin") {
+            header("Location: manage.php");
+        } else {
+            header("Location: jobs.php");
+        }
         exit();
     } else {
         $message = "Incorrect username or password!";

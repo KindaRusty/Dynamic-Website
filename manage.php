@@ -4,7 +4,13 @@ require 'settings.php';
 
 // Check if the manager is logged in
 if (!isset($_SESSION["manager"])) {
-    header("Location: manage.php");
+    header("Location: register.php"); // Redirect to login page if not logged in
+    exit();
+}
+
+// Allow only the admin account to access manage.php
+if ($_SESSION["manager"] !== "admin") {
+    header("Location: jobs.php"); // Redirect non-admin users to jobs.php
     exit();
 }
 
