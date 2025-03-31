@@ -20,9 +20,9 @@
     <!-- JOB SEARCH -->
  <div class="content">
     <section id="find">
-        <a href="index.html"><img src="images/banner.png" class="banner" alt="banner"></a>   
+        <a href="index.php"><img src="images/banner.png" class="banner" alt="banner"></a>   
         <a href="#search-results" class="search-btn">Show</a>
-        <a href="jobs.html" class="view-btn">Back</a>
+        <a href="jobs.php" class="view-btn">Back</a>
     </section>
  </div>
 

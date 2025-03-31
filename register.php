@@ -50,20 +50,16 @@ if (isset($_POST["login"])) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login & Register</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
-        form { display: inline-block; text-align: left; padding: 20px; border: 1px solid #ccc; }
-        input { display: block; width: 100%; margin-bottom: 10px; padding: 8px; }
-        button { width: 100%; padding: 10px; background: blue; color: white; border: none; }
-    </style>
+    <link rel="stylesheet" href="styles\register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <>
 
-<h2>Manage EOIs</h2>
 <?php if ($message) echo "<p style='color:red;'>$message</p>"; ?>
 
 // Combined form for login and registration
