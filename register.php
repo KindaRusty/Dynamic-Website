@@ -4,7 +4,7 @@ require 'settings.php';
 
 $message = "";
 
-// Handle registration
+// registration
 if (isset($_POST["register"])) {
     $username = trim($_POST["username"]);
     $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
@@ -24,7 +24,7 @@ if (isset($_POST["register"])) {
     }
 }
 
-// Handle login
+// login
 if (isset($_POST["login"])) {
     $username = trim($_POST["username"]);
     $password = $_POST["password"];
@@ -61,12 +61,12 @@ if (isset($_POST["login"])) {
         button { width: 100%; padding: 10px; background: blue; color: white; border: none; }
     </style>
 </head>
-<body>
+<>
 
 <h2>Manage EOIs</h2>
 <?php if ($message) echo "<p style='color:red;'>$message</p>"; ?>
 
-<!-- Combined form for both login & registration -->
+// Combined form for login and registration
 <form method="post">
     <h3>Login or Register</h3>
     <input type="text" name="username" placeholder="Username" required>
