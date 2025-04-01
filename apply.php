@@ -15,7 +15,7 @@
         <div class="apply_box">
           <h1>Job Application Form</h1> 
 
-          <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" id="job-application-form">
+          <form action="process_eoi.php" method="post" novalidate="novalidate">>
 
           <div class="form_container">
 
@@ -144,3 +144,4 @@
  
   </html>
     
+  
