@@ -32,6 +32,7 @@ h1 {
 }
 
 /* Navigation Styling */
+
 #header {
     display: flex;
     align-items: center;
@@ -69,15 +70,14 @@ h1 {
     padding: 10px 15px;
     transition: color 0.3s ease-in-out;
     text-decoration: none;
-    font-weight: bold;
 }
 
 #navbar li a.active {
-    color: #d37314; 
+    color: #9e7c67; 
 }
 
 #navbar li a:hover {
-    color: #0e0d0c;
+    color: #ff9500;
     text-decoration: none;
 }
 
@@ -96,6 +96,7 @@ h1 {
 .btn-signing:hover{
     background-color: rgb(73, 195, 89);
 }
+
 /* General Reset */
 body {
     font-family: Arial, sans-serif;

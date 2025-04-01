@@ -63,10 +63,11 @@ if (isset($_POST["login"])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
-<?php if ($message) echo "<p style='color:red;'>$message</p>"; ?>
+<body>  
 
 <form method="post">
     <h3>Login or Register</h3>
+    <?php if ($message) echo "<p style='color:red;'>$message</p>"; ?>
     <input type="text" name="username" placeholder="Username" required>
     <input type="password" name="password" placeholder="Password" required>
     

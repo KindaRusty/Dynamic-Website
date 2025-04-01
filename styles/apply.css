@@ -1,4 +1,4 @@
-html, body {
+html, body{
     height: 100%;
     margin: 0;
     padding: 0;
@@ -6,14 +6,14 @@ html, body {
     flex-direction: column;
 }
 
-body {
+body{
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
     flex: 1;
 }
 
 /* General Reset */
-body {
+body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -22,13 +22,14 @@ body {
 }
 
 /* Header Styling */
-h1 {
+h1{
     font: bold 24px Arial, sans-serif;
     color: #000;
 }
 
 /* Navigation Styling */
-#header {
+
+#header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,12 +43,12 @@ h1 {
     z-index: 1000;
 }
 
-.logo {
+.logo{
     height: 50px;
     margin-right: 20px;
 }
 
-#navbar {
+#navbar{
     list-style: none;
     display: flex;
     gap: 20px;
@@ -55,25 +56,24 @@ h1 {
     padding: 0;
 }
 
-#navbar li {
+#navbar li{
     display: inline;
 }
 
-#navbar li a {
+#navbar li a{
     font-size: 18px;
     color: #2d3e50;
     padding: 10px 15px;
     transition: color 0.3s ease-in-out;
     text-decoration: none;
-    font-weight: bold;
 }
 
-#navbar li a.active {
-    color: #d37314; 
+#navbar li a.active{
+    color: #9e7c67; 
 }
 
-#navbar li a:hover {
-    color: #0e0d0c;
+#navbar li a:hover{
+    color: #ff9500;
     text-decoration: none;
 }
 
@@ -93,9 +93,8 @@ h1 {
     background-color: rgb(73, 195, 89);
 }
 
-
 /* General Reset */
-body {
+body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -104,13 +103,13 @@ body {
 }
 
 /* Box index.html info */
-body {
+body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.container {
+.container{
     display: flex;
     justify-content: center;
     padding: 25px;
@@ -118,32 +117,32 @@ body {
 }
 
 
-*, *::before, *::after {
+*, *::before, *::after{
     box-sizing: border-box;
 }
 
 
 /* General Index background styles */
-body {
+body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.container {
+.container{
     display: flex;
     justify-content: center;
     padding: 20px;
 }
 
-body {
+body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
 }
 
-body {
+body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -151,7 +150,8 @@ body {
 }
 
 /*footer*/
-html, body {
+
+html, body{
     height: 100%;
     margin: 0;
     padding: 0;
@@ -159,27 +159,27 @@ html, body {
     flex-direction: column;
 }
 
-body {
+body{
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
     flex: 1;
 }
 
 /* Apply css */
-.apply-page * {
+.apply-page *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-.apply-page .form_container {
+.apply-page .form_container{
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
 
-.apply-page .form_control {
+.apply-page .form_control{
     display: flex;
     flex-direction: column;
 }
@@ -191,16 +191,16 @@ body {
   font-size: 16px;
 }
 
-.apply-page input:focus {
+.apply-page input:focus{
   outline-color: red;
 }
 
-.apply-page .button_container {
+.apply-page .button_container{
   margin-right: 145px;
   margin-top: 20px;
 }
 
-.apply-page button {
+.apply-page button{
   background-color: #333333;
   border: transparent solid 2px;
   padding: 5px 10px;
@@ -209,7 +209,7 @@ body {
   transition: 0.3s ease-in;
 }
 
-.apply-page button:hover {
+.apply-page button:hover{
   background-color: #ccc;
   border: 2px solid red;
   color: black;
@@ -217,15 +217,15 @@ body {
   cursor: pointer;
 }
 
-.apply-page .textarea_control {
+.apply-page .textarea_control{
   grid-column: 1 / span 2;
 }
 
-.apply-page .textarea_control textarea {
+.apply-page .textarea_control textarea{
   width: 100%;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 460px){
     .apply-page .textarea_control {
     grid-column: 1 / span 1;
   }
@@ -238,14 +238,14 @@ body {
     margin-bottom: 70px;
 }
 
-.apply-page {
+.apply-page{
     background-color: #ccc;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }    
 
-.apply-page .apply_box {
+.apply-page .apply_box{
     margin-top: 100px;
     max-width: 900px;
     padding: 40px;
