@@ -17,7 +17,7 @@
     
     <div class="body-container">
 
-    <?php include 'header_jobs.inc'; ?>
+    <?php include 'inc/header_jobs.inc'; ?>
 
         <main>    
 
@@ -99,7 +99,7 @@
 
  </div>
 
- <?php include 'footer_jobs.inc'; ?>
+ <?php include 'inc/footer_jobs.inc'; ?>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init();</script>
