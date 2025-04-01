@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <?php include 'header_about.inc'; ?>
+    <?php include 'inc/header_about.inc'; ?>
     <section id="about">
         <h1>About Our Group</h1>
         <dl>
@@ -133,7 +133,7 @@
 
         <p>Contact us at: <a href="mailto:thanhkien2900@gmail.com">TechNova@gmail.com</a></p>
     </section>
-    <?php include 'footer.inc'; ?>
+    <?php include 'inc/footer.inc'; ?>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init();</script>  

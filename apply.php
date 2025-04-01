@@ -10,43 +10,43 @@
 
 <body class="apply-page">
     
-    <?php include 'header_apply.inc'; ?>
+    <?php include 'inc/header_apply.inc'; ?>
     <div class="container apply-container">
         <div class="apply_box">
           <h1>Job Application Form</h1> 
 
-          <form action="process_eoi.php" method="post" novalidate="novalidate">>
+          <form action="process_eoi.php" method="post" novalidate="novalidate">
 
           <div class="form_container">
 
             <!-- Job Reference Number -->
               <div class="form_control">
                 <label for="job-reference" class="apply-label">Applying for</label>
-                <input type="text" id="job-reference" name="job-reference" maxlength="5" required placeholder="Job Reference Number" >
+                <input type="text" id="job-reference" name="job_reference_number" maxlength="5" required placeholder="Job Reference Number">
               </div>
 
             <!-- First Name -->  
               <div class="form_control">
                 <label for="first-name" class="apply-label">First Name</label>
-                <input type="text" id="first-name" name="first-name" maxlength="20" required pattern="[A-Za-z]+" title="Only letters allowed" placeholder="Enter your first name">
+                <input type="text" id="first-name" name="first_name" maxlength="20" required pattern="[A-Za-z]+" title="Only letters allowed" placeholder="Enter your first name">
               </div>
 
             <!-- Last Name -->
               <div class="form_control">
                 <label for="last-name" class="apply-label">Last Name</label>
-                <input type="text" id="last-name" name="last-name" maxlength="20" required pattern="[A-Za-z]+" title="Only letters allowed" placeholder="Enter your last name">
+                <input type="text" id="last-name" name="last_name" maxlength="20" required pattern="[A-Za-z]+" title="Only letters allowed" placeholder="Enter your last name">
               </div>
 
             <!-- Date of Birth -->
              <div class="form_control">
               <label for="dob" class="apply-label">Date of Birth</label>
-              <input type="date" id="dob" name="dob">
+              <input type="date" id="dob" name="dob" required>
            </div>
             
             <!-- Street Address -->
              <div class="form_control">
               <label for="address" class="apply-label">Street Address</label>
-              <input type="text" id="address" name="address" maxlength="40" required placeholder="Enter your street address">
+              <input type="text" id="address" name="street_address" maxlength="40" required placeholder="Enter your street address">
            </div>
 
             <!-- Suburb/Town -->
@@ -83,7 +83,6 @@
               <input type="email" id="email" name="email" required placeholder="youremail@domain.tld">
            </div>
 
-
             <!-- Phone Number -->
               <div class="form_control">
                 <label for="phone" class="apply-label">Phone Number</label>
@@ -112,17 +111,17 @@
             <div class="form_control">
               <label class="apply-label">Skills<span class="required"></span></label>
                <div class="checkbox-group">
-             <label><input type="checkbox" name="skills" value="HTML" required> HTML</label>
-             <label><input type="checkbox" name="skills" value="CSS"> CSS</label>
-             <label><input type="checkbox" name="skills" value="JavaScript"> JavaScript</label>
-             <label><input type="checkbox" name="skills" value="Other skills"> Other Skills</label>
+             <label><input type="checkbox" name="skill1" value="HTML"> HTML</label>
+             <label><input type="checkbox" name="skill2" value="CSS"> CSS</label>
+             <label><input type="checkbox" name="skill3" value="JavaScript"> JavaScript</label>
+             <label><input type="checkbox" name="other_skills_checkbox" value="yes"> Other Skills</label>
                </div>
             </div>
             
             <!-- Other Skills Textarea -->  
               <div class="textarea_control">
                 <label for="other-skills" class="apply-label">Other Skills (if applicable)</label>
-                <textarea id="other-skills" name="other-skills" rows="4" cols="50" placeholder="Text your other skills"></textarea>
+                <textarea id="other-skills" name="other_skills" rows="4" cols="50" placeholder="Text your other skills"></textarea>
               </div>
 
               <div class="button_container">
@@ -143,5 +142,4 @@
     </body>
  
   </html>
-    
-  
+

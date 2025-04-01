@@ -10,7 +10,7 @@
 
 <body>
     
-    <?php include 'header_index.inc'; ?>
+    <?php include 'inc/header_index.inc'; ?>
 
     <header class="bg-dark">
         
@@ -180,7 +180,7 @@
     </main>
     
     <div class="content">
-    <?php include 'footer.inc'; ?>
+    <?php include 'inc/footer.inc'; ?>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init();</script>    
