@@ -9,7 +9,7 @@
                 <li><a href="enhancements.php">Enhancements</a></li>
             </ul>
         </div>
-        <a href="test/register.php">
+        <a href="test/signin.html">
         <button data-aos="fade-down" data-aos-duration="2000" class="btn-signing">SIGN IN</button>
         </a>
 </section>
