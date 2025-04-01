@@ -12,26 +12,36 @@
 
 <body>
 
-    <section id="header" data-aos="fade-down" data-aos-duration="1500">
-        <a href="index.html">
-            <img src="C:\Users\tienh\OneDrive\Documents\COS10026\Project Part 1\Dynamic-Website\images\logo.png" class="logo" alt="logo">
-        </a>
-        <ul id="navbar">
-            <li><a href="index.php">Home</a></li>
-            <li><a class="active" href="jobs.php">Job Descriptions</a></li>
-            <li><a href="apply.php">Apply</a></li>
-            <li><a href="about.php">About Us</a></li>
-            <li><a href="enhancements.php">Enhancements</a></li>
-        </ul>
-        <a href="register.php">
-            <button data-aos="fade-down" data-aos-duration="2000" class="btn-signing">SIGN IN</button>
-        </a> 
-    </section>
-    
-    
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init();</script>
+    <div class="container" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" data-aos-duration="500">
+        <div class="form-box active" id="login-form">
+            <form action="">
+                <h2>Login</h2>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="password" name="password" placeholder="Your password" required>
+                <button type="submit" name="login">Login</button>
+                <p>Don't have an account? <a href="#register-form">Register</a></p>
+            </form>    
+        </div>
 
+        <div class="form-box" id="register-form">
+            <form action="">
+                <h2>Register</h2>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="password" name="password" placeholder="Your password" required>
+                <select name="role" required>
+                    <option value="">--Select Role--</option>
+                    <option value="user">User</option>
+                    <option value="admin">Admin</option>
+                </select>
+                <button type="submit" name="register">Register</button>
+                <p>Already have an account? <a href="#login-form">Login</a></p>
+            </form>    
+        </div>
+    </div>    
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    
 </body>
 </html>
