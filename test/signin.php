@@ -4,16 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="style.css">
-
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>        <!--https://boxicons.com/ -->
-
-    <title>Login & Register Page  ->> Code With Patel</title>
+    <title>Login & Register Page</title>
 </head>
 
 <body>
-
     <div class="container" id="container">
         <div class="form-container sign-up">
             <form>
@@ -54,13 +50,12 @@
         <div class="toggle-container">
             <div class="toggle">
                 <div class="toggle-panel toggle-left">
-                    <h1>Welcome To <br>Code with Patel</h1>
+                    <h1>Welcome To <br><strong>Nova Tech</strong></h1>
                     <p>Sign in With ID & Passowrd</p>
                     <button class="hidden" id="login">Sign In</button>
                 </div>
                 <div class="toggle-panel toggle-right">
-                    <h1>Hii Coder's</h1>
-                    <p>Join "Code With Patel" to Improve Your Coding Skills</p>
+                    <h1>Welcome Coders</h1>
                     <button class="hidden" id="register">Sign Up</button>
                 </div>
             </div>
@@ -69,5 +64,4 @@
 
     <script src="script.js"></script>
 </body>
-
 </html>

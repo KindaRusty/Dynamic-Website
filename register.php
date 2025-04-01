@@ -65,7 +65,6 @@ if (isset($_POST["login"])) {
 
 <?php if ($message) echo "<p style='color:red;'>$message</p>"; ?>
 
-// Combined form for login and registration
 <form method="post">
     <h3>Login or Register</h3>
     <input type="text" name="username" placeholder="Username" required>
