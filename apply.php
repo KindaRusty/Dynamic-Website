@@ -114,7 +114,6 @@
              <label><input type="checkbox" name="skill1" value="HTML"> HTML</label>
              <label><input type="checkbox" name="skill2" value="CSS"> CSS</label>
              <label><input type="checkbox" name="skill3" value="JavaScript"> JavaScript</label>
-             <label><input type="checkbox" name="other_skills_checkbox" value="yes"> Other Skills</label>
                </div>
             </div>
             
