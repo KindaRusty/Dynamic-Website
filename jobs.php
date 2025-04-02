@@ -32,7 +32,7 @@
                     </p>
         
                     <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" data-aos-duration="3000" class="buttons">
-                        <a href="apply.html" class="btn-signing-main">Get Started &gt;</a>
+                        <a href="apply.php" class="btn-signing-main">Get Started &gt;</a>
                     </div>
                 </div>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

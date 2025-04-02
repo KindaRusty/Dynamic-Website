@@ -1,5 +1,5 @@
 <section id="header" data-aos="fade-down" data-aos-duration="1500">
-        <a href="index.html"><img src="images/logo.png" class="logo" alt="logo"></a>
+        <a href="index.php"><img src="images/logo.png" class="logo" alt="logo"></a>
         <div>
             <ul id="navbar">
                 <li><a href="index.php">Home</a></li>
