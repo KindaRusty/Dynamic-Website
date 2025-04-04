@@ -105,7 +105,7 @@ if (isset($_POST["update_status"])) {
                 <?php endif; ?>
                 <form method="post">
                     <label>Enter job reference number to view EOIs:</label>
-                    <input type="text" name="job_reference_number">
+                    <input type="text" name="job_reference_number"vplaceholder="Job Reference Number">
                     <button type="submit" name="view_by_job">View</button>
                 </form>
                 <form method="post">
@@ -116,7 +116,7 @@ if (isset($_POST["update_status"])) {
                 </form>
                 <form method="post">
                     <label>Enter job reference number to delete all EOIs:</label>
-                    <input type="text" name="job_reference_number">
+                    <input type="text" name="job_reference_number" placeholder="Choose EOIs to delete">
                     <button type="submit" name="delete">Delete</button>
                 </form>
                 <form method="post">
