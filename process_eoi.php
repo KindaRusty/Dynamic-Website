@@ -149,7 +149,7 @@ if (!$conn->query($createTableSQL)) {
 }
 
 // Prepare and bind
-$stmt = $conn->prepare("INSERT INTO eoi (
+$stmt = $conn->prepare(query: "INSERT INTO eoi (
     job_reference_number, first_name, last_name, dob, gender, street_address, suburb,
     state, postcode, email, phone, skill1, skill2, skill3, other_skills
 ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
