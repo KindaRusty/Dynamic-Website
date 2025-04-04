@@ -46,7 +46,7 @@ body {
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Add spacing between form elements */
+    gap: 10px;
 }
 
 form label {
@@ -56,12 +56,12 @@ form label {
 
 form input[type="text"],
 form select {
-    width: 100%; /* Ensure inputs stay within the container */
+    width: 100%; 
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
-    box-sizing: border-box; /* Prevent padding from affecting width */
+    box-sizing: border-box;
 }
 
 form button {
