@@ -11,15 +11,10 @@ $db_user = 'root';
 $db_pass = '';
 $db_name = 'eoi_database';
 
-// Connect to MySQL
 $conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
-
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
-// Function to sanitize and validate input
 function sanitizeInput($data) {
     $data = trim($data);
     $data = stripslashes($data);
@@ -27,7 +22,6 @@ function sanitizeInput($data) {
     return $data;
 }
 
-// Initialize variables and error array
 $errors = [];
 $fields = [
     'job_reference_number' => '', 'first_name' => '', 'last_name' => '',
@@ -35,15 +29,12 @@ $fields = [
     'state' => '', 'postcode' => '', 'email' => '', 'phone' => '',
     'skill1' => '', 'skill2' => '', 'skill3' => '', 'other_skills' => ''
 ];
-
-// Sanitize all inputs
 foreach ($fields as $key => $value) {
     if (isset($_POST[$key])) {
         $fields[$key] = sanitizeInput($_POST[$key]);
     }
 }
 
-// Validation rules
 $stateCodes = ['VIC', 'NSW', 'QLD', 'NT', 'WA', 'SA', 'TAS', 'ACT'];
 
 // Job reference number (exactly 5 alphanumeric)
@@ -51,12 +42,12 @@ if (!preg_match('/^[a-zA-Z0-9]{5}$/', $fields['job_reference_number'])) {
     $errors['job_reference_number'] = 'Job reference number must be exactly 5 alphanumeric characters';
 }
 
-// First name (max 20 alpha)
+// First name (max 20)
 if (!preg_match('/^[a-zA-Z]{1,20}$/', $fields['first_name'])) {
     $errors['first_name'] = 'First name must be up to 20 alphabetic characters';
 }
 
-// Last name (max 20 alpha)
+// Last name (max 20)
 if (!preg_match('/^[a-zA-Z]{1,20}$/', $fields['last_name'])) {
     $errors['last_name'] = 'Last name must be up to 20 alphabetic characters';
 }
@@ -75,23 +66,22 @@ if (!preg_match('/^\d{4}-\d{2}-\d{2}$/', $fields['dob'])) {
         }
     }
 }
-
 // Gender (must be selected)
 if (empty($fields['gender']) || !in_array($fields['gender'], ['Male', 'Female', 'Other'])) {
     $errors['gender'] = 'Please select a valid gender';
 }
 
-// Street address (max 40 characters)
+// Street address (max 40)
 if (strlen($fields['street_address']) > 40) {
     $errors['street_address'] = 'Street address must be 40 characters or less';
 }
 
-// Suburb/town (max 40 characters)
+// Suburb/town (max 40)
 if (strlen($fields['suburb']) > 40) {
     $errors['suburb'] = 'Suburb/town must be 40 characters or less';
 }
 
-// State (must be valid)
+// State
 if (!in_array($fields['state'], $stateCodes)) {
     $errors['state'] = 'Please select a valid state';
 }
@@ -162,11 +152,9 @@ $stmt->bind_param(
     $fields['skill1'], $fields['skill2'], $fields['skill3'], $fields['other_skills']
 );
 
-// Execute and check for errors
 if ($stmt->execute()) {
     $eoiNumber = $conn->insert_id;
-    
-    // Display success page
+
     include('success_page.php'); 
 } else {
     die("Error: " . $stmt->error);
