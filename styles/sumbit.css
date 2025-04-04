@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  background: #eceff1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;   
+    margin-top: 30px;  
+  }
+
+.alert-error, .alert-success{
+  width: 500px;
+  background: #fff;
+  position: relative;
+  box-shadow: 0 0 2px rgba(0,0,0,0.05);
+  padding: 30px; /* Increase padding */
+  border-radius: 10px; /* Smooth corners */
+  text-align: center;
+}
+
+.alert-icon{
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 2px rgba(0,0,0,0.05);
+}
+
+.icon{
+  display: block;
+  font-size: 36px;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.wrapper .alert-success .alert-icon{
+  color: #69d1a0;
+}
+
+.wrapper .alert-success .alert-icon .icon{
+  border: 2px solid #69d1a0;
+}
+
+.wrapper .alert-error .alert-icon{
+  color: #e54053;
+}
+
+.wrapper .alert-error .alert-icon .icon{
+  border: 2px solid #e54053;
+}
+
+.content{
+  padding: 60px 30px 30px;
+  text-align: left;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.content h1{
+  font-weight: 1000;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.content p{
+  color: #000000;
+  line-height: 20px; 
+  margin-bottom: 10px; 
+}
+
+.content ul li {
+    line-height: 18px;
+    margin-bottom: 12px; 
+}
+
+button, a{
+  border: 0px;
+  display: block;
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.alert-success button{
+  background: #69d1a0;
+}
+
+.alert-error button{
+  background: #e54053;
+}
+
+.alert-succes button:hover{
+  background: #71e5ae;
+}
+
+.alert-error button:hover{
+  background: #ff8694;
+}
