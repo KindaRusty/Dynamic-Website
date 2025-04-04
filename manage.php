@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage EOIs</title>
+    <link rel="stylesheet" href="styles/manage.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+
 <?php
 session_start();
 require 'settings.php';
@@ -34,65 +44,73 @@ if (isset($_POST["update_status"])) {
 
 <h2>Manage EOIs</h2>
 
-<!-- Form to view EOIs by job reference number -->
-<form method="post">
-    <label>Enter job reference number to view EOIs:</label>
-    <input type="text" name="job_reference_number">
-    <button type="submit" name="view_by_job">View</button>
-</form>
+<div class="main-container">
+    <!-- Left Section: Form Container -->
+    <div class="form-container">
+        <!-- Form to view EOIs by job reference number -->
+        <form method="post">
+            <label>Enter job reference number to view EOIs:</label>
+            <input type="text" name="job_reference_number">
+            <button type="submit" name="view_by_job">View</button>
+        </form>
 
-<!-- Form to view EOIs by applicant name -->
-<form method="post">
-    <label>Enter applicant name to view EOIs:</label>
-    <input type="text" name="first_name" placeholder="First Name">
-    <input type="text" name="last_name" placeholder="Last Name">
-    <button type="submit" name="view_by_name">View</button>
-</form>
+        <!-- Form to view EOIs by applicant name -->
+        <form method="post">
+            <label>Enter applicant name to view EOIs:</label>
+            <input type="text" name="first_name" placeholder="First Name">
+            <input type="text" name="last_name" placeholder="Last Name">
+            <button type="submit" name="view_by_name">View</button>
+        </form>
 
-<!-- Form to delete EOIs by job reference number -->
-<form method="post">
-    <label>Enter job reference number to delete all EOIs:</label>
-    <input type="text" name="job_reference_number">
-    <button type="submit" name="delete">Delete</button>
-</form>
+        <!-- Form to delete EOIs by job reference number -->
+        <form method="post">
+            <label>Enter job reference number to delete all EOIs:</label>
+            <input type="text" name="job_reference_number">
+            <button type="submit" name="delete">Delete</button>
+        </form>
 
-<!-- Form to update the status of an EOI -->
-<form method="post">
-    <label>Update EOI status:</label>
-    <input type="text" name="eoi_id" placeholder="EOI ID">
-    <select name="status">
-        <option value="New">New</option>
-        <option value="Current">Current</option>
-        <option value="Final">Final</option>
-    </select>
-    <button type="submit" name="update_status">Update</button>
-</form>
+        <!-- Form to update the status of an EOI -->
+        <form method="post">
+            <label>Update EOI status:</label>
+            <input type="text" name="eoi_id" placeholder="EOI ID">
+            <select name="status">
+                <option value="New">New</option>
+                <option value="Current">Current</option>
+                <option value="Final">Final</option>
+            </select>
+            <button type="submit" name="update_status">Update</button>
+        </form>
+    </div>
 
-<!-- Table to display all EOIs -->
-<table border="1">
-    <tr>
-        <th>ID</th>
-        <th>Job Reference Number</th>
-        <th>Full Name</th>
-        <th>Address</th>
-        <th>Email</th>
-        <th>Phone</th>
-        <th>Skills</th>
-        <th>Status</th>
-    </tr>
-    <?php
-    $stmt = $pdo->query("SELECT * FROM eoi");
-    while ($row = $stmt->fetch()) {
-        echo "<tr>
-                <td>{$row['eoi_id']}</td>
-                <td>{$row['job_reference_number']}</td>
-                <td>{$row['first_name']} {$row['last_name']}</td>
-                <td>{$row['street_address']}, {$row['suburb']}, {$row['state']} {$row['postcode']}</td>
-                <td>{$row['email']}</td>
-                <td>{$row['phone']}</td>
-                <td>{$row['skill1']}, {$row['skill2']}, {$row['skill3']}</td>
-                <td>{$row['status']}</td>
-              </tr>";
-    }
-    ?>
-</table>
+    <!-- Right Section: Tables -->
+    <div class="table-container">
+        <!-- Table to display EOIs -->
+        <table border="1">
+            <tr>
+                <th>ID</th>
+                <th>Job Reference Number</th>
+                <th>Full Name</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Skills</th>
+                <th>Status</th>
+            </tr>
+            <?php
+            $stmt = $pdo->query("SELECT * FROM eoi");
+            while ($row = $stmt->fetch()) {
+                echo "<tr>
+                        <td>{$row['eoi_id']}</td>
+                        <td>{$row['job_reference_number']}</td>
+                        <td>{$row['first_name']} {$row['last_name']}</td>
+                        <td>{$row['street_address']}, {$row['suburb']}, {$row['state']} {$row['postcode']}</td>
+                        <td>{$row['email']}</td>
+                        <td>{$row['phone']}</td>
+                        <td>{$row['skill1']}, {$row['skill2']}, {$row['skill3']}</td>
+                        <td>{$row['status']}</td>
+                      </tr>";
+            }
+            ?>
+        </table>
+    </div>
+</div>
