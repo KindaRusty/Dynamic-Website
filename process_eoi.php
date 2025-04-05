@@ -1,11 +1,9 @@
 <?php
-// Prevent direct URL access
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header("Location: apply.php");
     exit();
 }
 
-// Database configuration
 $db_host = 'localhost';
 $db_user = 'root';
 $db_pass = '';
