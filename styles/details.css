@@ -44,14 +44,12 @@ body{
 }
 
 .job-image{
-    width: 100%; /* Makes the image fit inside */
+    width: 100%;
     max-height: 150px;
-    object-fit: cover; /* Ensures proper scaling */
-    border-radius: 8px; /* Slightly rounded corners */
+    object-fit: cover;
+    border-radius: 8px; 
 }
-
 /* Hidden content */
-
 .hidden-content{
     display: none;
     background: #f9f9f9;
@@ -90,13 +88,11 @@ body{
 }
 
 /* Search, display content */
-
 .hidden-content:target{
     display: block;
 }
 
 /* Search */
-
 .search-btn{
     display: inline-block;
     padding: 10px 20px;
@@ -112,7 +108,6 @@ body{
 }
 
 /* View & Back */
-
 .view-btn, .back-btn{
     display: inline-block;
     padding: 8px 15px;

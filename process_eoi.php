@@ -1,11 +1,9 @@
 <?php
-// Prevent direct URL access
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header("Location: apply.php");
     exit();
 }
 
-// Database configuration
 $db_host = 'localhost';
 $db_user = 'root';
 $db_pass = '';
@@ -108,7 +106,6 @@ if ((isset($_POST['other_skills_checkbox']) && $_POST['other_skills_checkbox'] =
 
 // Check for errors
 if (!empty($errors)) {
-    // Display errors to user (you might want to redirect back to form with errors)
     include('error_page.php');
     exit();
 }
