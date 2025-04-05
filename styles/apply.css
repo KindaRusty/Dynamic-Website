@@ -1,24 +1,9 @@
-html, body{
+html{
     height: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-}
-
-body{
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    flex: 1;
-}
-
-/* General Reset */
-body{
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    text-align: center;
 }
 
 /* Header Styling */
@@ -93,22 +78,6 @@ h1{
     background-color: rgb(73, 195, 89);
 }
 
-/* General Reset */
-body{
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-/* Box index.html info */
-body{
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
 .container{
     display: flex;
     justify-content: center;
@@ -121,13 +90,7 @@ body{
     box-sizing: border-box;
 }
 
-
 /* General Index background styles */
-body{
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
 .container{
     display: flex;
@@ -149,29 +112,24 @@ body{
     background-color: #f8f9fa;
 }
 
-/*footer*/
-
-html, body{
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-body{
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    flex: 1;
-}
-
 /* Apply css */
+
 .apply-page *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
+}
+
+.apply-page{
+    background-image: url('../images/apply_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}    
+
 .apply-page .form_container{
     margin-top: 20px;
     display: grid;
@@ -237,13 +195,6 @@ body{
     margin: 0 auto;
     margin-bottom: 70px;
 }
-
-.apply-page{
-    background-color: #ccc;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}    
 
 .apply-page .apply_box{
     margin-top: 100px;
