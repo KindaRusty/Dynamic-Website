@@ -73,12 +73,12 @@ h1 {
 }
 
 #navbar li a.active {
-    color: #9e7c67; 
+    color: #6D4F46; 
 }
 
 #navbar li a:hover {
     color: #ff9500;
-    text-decoration: none;
+    text-decoration: bold;
 }
 
 .btn-signing{
