@@ -16,8 +16,6 @@
 <body class="jobs-page">
 
 <main>
-
-    <!-- JOB SEARCH -->
  <div class="content">
     <section id="find">
         <a href="index.php"><img src="images/banner.png" class="banner" alt="banner"></a>   
@@ -26,33 +24,24 @@
     </section>
  </div>
 
-    <!-- JOB LIST (hidden) -->
     <div id="search-results" class="hidden-content">
 
         <a href="#find" class="close-btn">&times;</a>
-
-        <!-- Job 1 -->
         <div class="job-summary">
             <h3>Senior Web Design Engineer</h3>
             <p>📍 Vietnam, DaNang | 📅 Posted Today | JR184</p>
             <a href="#job-details-1" class="view-btn">View</a>
         </div>
-
-        <!-- Job 2 -->
         <div class="job-summary">
             <h3>Senior Software Test Engineer </h3>
             <p>📍 Vietnam, DaNang | 📅 Posted Today | DE949</p>
             <a href="#job-details-2" class="view-btn">View</a>
         </div>
-
-        <!-- Job 3 -->
         <div class="job-summary">
             <h3>Cybersecurity Analyst</h3>
             <p>📍 Remote | 📅 Posted Today | GC940</p>
             <a href="#job-details-3" class="view-btn">View</a>
         </div>
-
-        <!-- Job 4 -->
         <div class="job-summary">
             <h3>IT Support Specialist</h3>
             <p>📍 Vietnam, DaNang | 📅 Posted Today | DH583</p>
@@ -60,10 +49,8 @@
         </div>
 
 </div>
-
-    <!-- Detail Job 1 -->
     <div id="job-details-1" class="hidden-content job-details">
-        <h2>Senior Web Design Engineer</h2> <!-- Position title -->
+        <h2>Senior Web Design Engineer</h2> 
         <p>🌍 Locations: Vietnam, DaNang</p>
         <p>⏳ Full-time | 📅 Posted: 28/2/2025</p>
         <p>🔖: JR184 </p>        
@@ -97,13 +84,11 @@
                 <li>Familiarity with network diagnostics tools.</li>
                 <li>BSc/MSc in Computer Science or relevant field.</li>
             </ul>
-        <p>TechNova are looking for a Senior Web Developer to build and maintain functional web pages and applications. Senior Web Developer responsibilities include leading a team of junior developers, refining website specifications and resolving technical issues. To be successful in this role, you should have extensive experience building web pages from scratch and in-depth knowledge of at least one of the following programming languages: Javascript, Ruby or PHP. Ultimately, you will ensure our web pages are up and running and cover both internal and customer needs.</p> <!-- Brief description -->     
+        <p>TechNova are looking for a Senior Web Developer to build and maintain functional web pages and applications. Senior Web Developer responsibilities include leading a team of junior developers, refining website specifications and resolving technical issues. To be successful in this role, you should have extensive experience building web pages from scratch and in-depth knowledge of at least one of the following programming languages: Javascript, Ruby or PHP. Ultimately, you will ensure our web pages are up and running and cover both internal and customer needs.</p>    
         <a href="#search-results" class="back-btn">Back</a>
     </div>
-
-    <!-- Detail Job 2 -->
     <div id="job-details-2" class="hidden-content job-details">
-        <h2>Senior Software Test Engineer</h2> <!-- Position title -->
+        <h2>Senior Software Test Engineer</h2> 
         <p>🌍 Locations: Vietnam, DaNang</p>
         <p>⏳ Full-time | 📅 Posted: 1/3/2025</p>
         <p>🔖: DE949 </p>
@@ -141,9 +126,8 @@
         <a href="#search-results" class="back-btn">Back</a>
     </div>
 
-    <!-- Detail Job 3 -->
     <div id="job-details-3" class="hidden-content job-details">
-        <h2>Cybersecurity Analyst</h2> <!-- Position title -->
+        <h2>Cybersecurity Analyst</h2> 
         <p>🌍 Locations: Remote</p>
         <p>⏳ Full-time | 📅 Posted: 25/2/2025</p>
         <p>🔖: GC940 </p>
@@ -177,13 +161,12 @@
                 <li>Knowledge of Japanese and/or Chinese is a plus.</li>
                 <li>Basic knowledge of Azure or any SIEM platform (e.g., Splunk, Azure Sentinel) is a plus.</li>
             </ul>
-        <p>TechNova are looking for a driven and passionate Cybersecurity Analyst to join our growing software engineering team. This position focuses on innovating cutting-edge sandbox and threat intelligence solutions. As part of an international team with members in Vietnam, China, Russia and India, you will have the opportunity to work on an amazing product, both locally and remotely around the world.</p> <!-- Brief description -->
+        <p>TechNova are looking for a driven and passionate Cybersecurity Analyst to join our growing software engineering team. This position focuses on innovating cutting-edge sandbox and threat intelligence solutions. As part of an international team with members in Vietnam, China, Russia and India, you will have the opportunity to work on an amazing product, both locally and remotely around the world.</p> 
         <a href="#search-results" class="back-btn">Back</a>
     </div>
 
-     <!-- Detail Job 4 -->
      <div id="job-details-4" class="hidden-content job-details">
-        <h2>IT Support Specialist</h2> <!-- Position title -->
+        <h2>IT Support Specialist</h2> 
         <p>🌍 Locations: Vietnam, DaNang</p>
         <p>⏳ Full-time | 📅 Posted: 27/2/2025</p>
         <p>🔖: DH583 </p>
@@ -217,7 +200,7 @@
                 <li>Ability to communicate in Japanese is a plus.</li>
                 <li>Willing to travel for business if required.</li>
             </ul>
-        <p>At TechNova, we are dedicated to delivering top-tier technology solutions to businesses worldwide. As an IT Support Specialist, you will play a crucial role in ensuring seamless IT operations by providing technical assistance, troubleshooting issues, and maintaining system efficiency. You will work closely with teams to support hardware, software, and network infrastructure while ensuring optimal performance and security.</p> <!-- Brief description -->
+        <p>At TechNova, we are dedicated to delivering top-tier technology solutions to businesses worldwide. As an IT Support Specialist, you will play a crucial role in ensuring seamless IT operations by providing technical assistance, troubleshooting issues, and maintaining system efficiency. You will work closely with teams to support hardware, software, and network infrastructure while ensuring optimal performance and security.</p> 
         <a href="#search-results" class="back-btn">Back</a>
     </div>
 

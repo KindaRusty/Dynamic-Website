@@ -98,8 +98,6 @@ if (isset($_POST["update_status"])) {
         <div class="form-container">
             <div class="form-section">
                 <h2>Manage EOIs</h2>
-
-                <!-- Notification -->
                 <?php if (!empty($notification)): ?>
                     <div class="notification"><?php echo htmlspecialchars($notification); ?></div>
                 <?php endif; ?>

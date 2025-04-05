@@ -32,7 +32,7 @@ body {
 .form-section {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Add spacing between forms */
+    gap: 20px; 
 }
 
 .form-section h2 {

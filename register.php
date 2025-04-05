@@ -8,8 +8,6 @@ $message = "";
 if (isset($_POST["register"])) {
     $username = trim($_POST["username"]);
     $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
-
-    // Check if the username already exists
     $stmt = $pdo->prepare("SELECT * FROM managers WHERE username = ?");
     $stmt->execute([$username]);
     if ($stmt->rowCount() > 0) {
