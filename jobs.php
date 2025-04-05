@@ -42,9 +42,9 @@
     </div>
 
     <div class="slideshow-container" >
-        <img src="images\work1.png" class="slide">
-        <img src="images\work2.png" class="slide">
-        <img src="images\work3.png" class="slide">
+        <img src="images\work1.png" class="slide" alt="work1">
+        <img src="images\work2.png" class="slide" alt="work2">
+        <img src="images\work3.png" class="slide" alt="work3">
     </div>
 
     <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" data-aos-duration="3000" class="job-heading-container">

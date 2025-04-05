@@ -11,31 +11,31 @@
 
             <button class="media youtube"> 
                 <div class="media-logo">
-                    <a href="https://youtu.be/_X2wlM2Ptbk">Youtube<i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://youtu.be/_X2wlM2Ptbk"><i class="fa-brands fa-youtube"></i></a>
                 </div> 
             </button>
             
             <button class="media facebook"> 
                 <div class="media-logo">
-                    <a href="https://www.facebook.com/tienhung.bui.33633">Facebook<i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/tienhung.bui.33633"><i class="fa-brands fa-facebook"></i></a>
                 </div> 
             </button>
             
             <button class="media email"> 
                 <div class="media-logo">
-                    <a href="mailto:tienhung2000dt@gmail.com">Email<i class="fa-solid fa-envelope"></i></a>
+                    <a href="mailto:tienhung2000dt@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                 </div> 
             </button>
             
             <button class="media github"> 
                 <div class="media-logo">
-                    <a href="https://github.com/THungB">Github<i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/THungB"><i class="fa-brands fa-github"></i></a>
                 </div> 
             </button>
             
             <button class="media linkedin"> 
                 <div class="media-logo">
-                    <a href="https://www.linkedin.com/in/b%C3%B9i-ti%E1%BA%BFn-h%C6%B0ng-261309341/">Linkedin<i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/b%C3%B9i-ti%E1%BA%BFn-h%C6%B0ng-261309341/"><i class="fa-brands fa-linkedin"></i></a>
                 </div> 
             </button>
                         

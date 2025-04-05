@@ -60,12 +60,12 @@
 }
 
 #navbar li a.active{
-    color: #d37314; 
+    color: #6D4F46; 
 }
 
 #navbar li a:hover{
     color: #d37314;
-    text-decoration: none;
+    text-decoration: bold;
 }
 
 .btn-signing{
@@ -320,7 +320,7 @@ main{
 .view-btn{
     display: inline-block;
     padding: 8px 15px;
-    background: #007bff;
+    background: #0054AD;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -329,7 +329,7 @@ main{
 }
 
 .view-btn:hover{
-    background: #0056b3;
+    background: #0054AD;
 }
 
 /* Footer */
