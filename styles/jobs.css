@@ -437,3 +437,7 @@ main{
 .footer-container .column a:hover{
     color: #1d4ed8;
 }
+
+.visually-hidden{
+    display: none; 
+}

@@ -11,31 +11,46 @@
 
             <button class="media youtube"> 
                 <div class="media-logo">
-                    <a href="https://youtu.be/_X2wlM2Ptbk">Youtube<i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://youtu.be/_X2wlM2Ptbk">
+                    <span class="visually-hidden">YTB</span>
+                    <i class="fa-brands fa-youtube"></i>
+                    </a>
                 </div> 
             </button>
             
             <button class="media facebook"> 
                 <div class="media-logo">
-                    <a href="https://www.facebook.com/tienhung.bui.33633">Facebook<i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/tienhung.bui.33633">
+                    <span class="visually-hidden">FB</span>
+                    <i class="fa-brands fa-facebook"></i>
+                    </a>
                 </div> 
             </button>
             
             <button class="media email"> 
                 <div class="media-logo">
-                    <a href="mailto:tienhung2000dt@gmail.com">Email<i class="fa-solid fa-envelope"></i></a>
+                    <a href="mailto:tienhung2000dt@gmail.com">
+                    <span class="visually-hidden">E</span>
+                    <i class="fa-solid fa-envelope"></i>
+                    </a>
                 </div> 
             </button>
             
             <button class="media github"> 
                 <div class="media-logo">
-                    <a href="https://github.com/THungB">Github<i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/THungB">
+                    <span class="visually-hidden">GH</span>
+                    <i class="fa-brands fa-github"></i>
+                    </a>
                 </div> 
             </button>
             
             <button class="media linkedin"> 
                 <div class="media-logo">
-                    <a href="https://www.linkedin.com/in/b%C3%B9i-ti%E1%BA%BFn-h%C6%B0ng-261309341/">Linkedin<i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/b%C3%B9i-ti%E1%BA%BFn-h%C6%B0ng-261309341/">
+                    <span class="visually-hidden">Lin</span>
+                    <i class="fa-brands fa-linkedin"></i>
+                    </a>
                 </div> 
             </button>
                         
