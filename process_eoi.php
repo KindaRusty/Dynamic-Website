@@ -108,7 +108,6 @@ if ((isset($_POST['other_skills_checkbox']) && $_POST['other_skills_checkbox'] =
 
 // Check for errors
 if (!empty($errors)) {
-    // Display errors to user (you might want to redirect back to form with errors)
     include('error_page.php');
     exit();
 }

@@ -8,8 +8,6 @@ $message = "";
 if (isset($_POST["register"])) {
     $username = trim($_POST["username"]);
     $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
-
-    // Check if the username already exists
     $stmt = $pdo->prepare("SELECT * FROM managers WHERE username = ?");
     $stmt->execute([$username]);
     if ($stmt->rowCount() > 0) {
@@ -55,7 +53,7 @@ if (isset($_POST["login"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login & Register</title>
-    <link rel="stylesheet" href="styles\register.css">
+    <link rel="stylesheet" href="styles/register.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 

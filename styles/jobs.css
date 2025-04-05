@@ -85,7 +85,6 @@
 }
 
 /* Main content */
-
 main{
     margin-top: 100px;
     display: flex;
@@ -133,7 +132,6 @@ main{
 :root{
     --clr: blue; /* Define the default color */
 }
-
 .btn-signing-main{
     position: relative;
     padding: 1rem 2rem;
@@ -217,7 +215,6 @@ main{
 }
 
 /* Info Cards */
-
 .jobs-detail{
     width: 100%;
     height: auto; 
@@ -333,7 +330,6 @@ main{
 }
 
 /* Footer */
-
 .blur{
     position: absolute;
     box-shadow: 0 0 1000px 50px #1d4ed8;
