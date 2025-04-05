@@ -62,8 +62,10 @@ if (isset($_POST["login"])) {
 <form method="post">
     <h3>Login or Register</h3>
     <?php if ($message) echo "<p style='color:red;'>$message</p>"; ?>
-    <input type="text" name="username" placeholder="Username" required>
-    <input type="password" name="password" placeholder="Password" required>
+    <label for="username" class="sr-only">Username</label>
+    <input type="text" name="username" id="username" placeholder="Username" required>
+    <label for="password" class="sr-only">Password</label>
+    <input type="password" name="password" id="password" placeholder="Password" required>
     
     <button type="submit" name="login">Login</button>
     <button type="submit" name="register">Register</button>
