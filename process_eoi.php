@@ -104,13 +104,12 @@ if ((isset($_POST['other_skills_checkbox']) && $_POST['other_skills_checkbox'] =
     $errors['other_skills'] = 'Please describe your other skills';
 }
 
-// Check for errors
 if (!empty($errors)) {
     include('error_page.php');
     exit();
 }
 
-// Create EOI table if it doesn't exist
+// Create EOI table if it doesn't exist (it does esixt btw lol)
 $createTableSQL = "CREATE TABLE IF NOT EXISTS eoi (
     eoi_id INT AUTO_INCREMENT PRIMARY KEY,
     job_reference_number VARCHAR(10) NOT NULL,
@@ -135,7 +134,7 @@ if (!$conn->query($createTableSQL)) {
     die("Error creating table: " . $conn->error);
 }
 
-// Prepare and bind
+
 $stmt = $conn->prepare(query: "INSERT INTO eoi (
     job_reference_number, first_name, last_name, dob, gender, street_address, suburb,
     state, postcode, email, phone, skill1, skill2, skill3, other_skills
