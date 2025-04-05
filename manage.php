@@ -77,11 +77,28 @@ if (empty($eois) && !isset($_POST["view_by_job"]) && !isset($_POST["view_by_name
 }
 
 if (isset($_POST["update_status"])) {
-    $eoi_id = $_POST["eoi_id"];
-    $new_status = $_POST["status"];
-    $stmt = $pdo->prepare("UPDATE eoi SET status = ? WHERE eoi_id = ?");
-    $stmt->execute([$new_status, $eoi_id]);
-    echo "<div class='notification'>Status updated successfully!</div>";
+    $eoi_id = trim($_POST["eoi_id"]);
+    $new_status = trim($_POST["status"]);
+
+    if (!empty($eoi_id) && !empty($new_status)) {
+                $stmt = $pdo->prepare("SELECT * FROM eoi WHERE eoi_id = ?");
+        $stmt->execute([$eoi_id]);
+        $eoi = $stmt->fetch();
+
+        if ($eoi) {
+                        $stmt = $pdo->prepare("UPDATE eoi SET status = ? WHERE eoi_id = ?");
+            $stmt->execute([$new_status, $eoi_id]);
+            $notification = "Status updated successfully for EOI ID: $eoi_id.";
+
+            // Refresh the EOI list after update
+            $stmt = $pdo->query("SELECT * FROM eoi");
+            $eois = $stmt->fetchAll();
+        } else {
+            $notification = "EOI with ID $eoi_id does not exist.";
+        }
+    } else {
+        $notification = "Please enter a valid EOI ID and select a status.";
+    }
 }
 ?>
 
